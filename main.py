@@ -6,7 +6,7 @@ from pathlib import Path
 import joblib
 from fastapi.middleware.cors import CORSMiddleware
 origins = [
-    "https://africogfe.vercel.app/",
+    "https://africogfe.vercel.app",
     "http://localhost:3000",
 ]
 app = FastAPI(title="Working Memory Model API", version="1.0.0")
