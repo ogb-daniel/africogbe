@@ -13,11 +13,11 @@ def test_api():
         return
     
     # Test prediction endpoint
-    test_data = {"Age": 36, "WorkingMemory_Score": 85}  # 3 years old
+    test_data = {"Age": 1, "WorkingMemory_Score": 80}  # 3 years old
 
     try:
         response = requests.post(
-            f"{base_url}/predict",
+            f"{base_url}/predict/working-memory",
             json=test_data,
             headers={"Content-Type": "application/json"}
         )
